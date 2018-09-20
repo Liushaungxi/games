@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 
+@available(iOS 10.0, *)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        let vc = Game2048ViewController()
+        window?.rootViewController = vc
+        window?.makeKeyAndVisible()
         // Override point for customization after application launch.
         return true
     }
@@ -46,6 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Core Data stack
 
+    @available(iOS 10.0, *)
     lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
@@ -75,6 +80,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Core Data Saving support
 
+    @available(iOS 10.0, *)
     func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {
