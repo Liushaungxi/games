@@ -17,10 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let vc = Game2048ViewController()
+        let vc = TempMainViewController()
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
-        // Override point for customization after application launch.
         return true
     }
 
@@ -43,6 +42,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
+        File.delFile(fileName: "lishi.txt")
+        File.createFile(fileName: "lishi.txt", filePathName: "")
+        File.writeFile(fileName: "lishi.txt", filePathName: "", content: mybook.toJSONString()!)
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()

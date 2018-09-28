@@ -1,16 +1,40 @@
 PODS:
+  - Alamofire (4.7.3)
+  - HandyJSON (4.1.1)
+  - Kanna (4.0.1)
+  - Kingfisher (4.8.1)
+  - PKHUD (5.1.0)
   - SnapKit (4.0.0)
+  - XLPagerTabStrip (8.0.1)
 
 DEPENDENCIES:
+  - Alamofire
+  - HandyJSON (= 4.1.1)
+  - Kanna
+  - Kingfisher
+  - PKHUD
   - SnapKit
+  - XLPagerTabStrip
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - HandyJSON
+    - Kanna
+    - Kingfisher
+    - PKHUD
     - SnapKit
+    - XLPagerTabStrip
 
 SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  HandyJSON: 3a3de917c4118767ffe41c29b5acba23409649f4
+  Kanna: 15569a2331b79782a1753cf280c8e69e2a033654
+  Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
+  PKHUD: 62ea46a1e88c4def1da784878d199bb54c841e3c
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  XLPagerTabStrip: c908b17cbf42fcd2598ee1adfc49bae25444d88a
 
-PODFILE CHECKSUM: 86dbe1e11120c9daef214072825bb7458a0857a2
+PODFILE CHECKSUM: 3e368b0d9496dcc9d703af2272ede7e2ed65c5ae
 
 COCOAPODS: 1.5.3
