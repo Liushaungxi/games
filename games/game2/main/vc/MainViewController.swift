@@ -27,7 +27,7 @@ class MainViewController: ButtonBarPagerTabStripViewController {
         super.viewDidLoad()
     }
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
-        let vc1 = MyBooksCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout())
+        let vc1 = NewMybooksViewController()
         vc1.titles.title = "我的书架"
         
         let vc2 = WebsTableViewController()

@@ -35,5 +35,6 @@ class KfMybook: NSObject,HandyJSON {
     var imagePath = ""
     var currentChapter = ""
     var currentIndex = 0
+    var chapterIndex = 0
     required override init(){}
 }

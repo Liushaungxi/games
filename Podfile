@@ -9,5 +9,6 @@ pod 'HandyJSON', '4.1.1'
 pod 'PKHUD'
 pod 'XLPagerTabStrip'
 pod 'Alamofire'
+pod 'SwiftTheme'
 pod 'Kingfisher'
 end

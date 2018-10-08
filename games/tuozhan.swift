@@ -54,7 +54,7 @@ func findContent(_ url:String)->(title:String,nextUrl:String,parUrl:String,conte
             temp.removeAll()
             continue
         }
-        if i == 20{
+        if i == (Int(UIScreen.main.bounds.width-24)/tableViewFont){
             i = 0
             texts.append(temp)
             temp.removeAll()
@@ -65,11 +65,11 @@ func findContent(_ url:String)->(title:String,nextUrl:String,parUrl:String,conte
             texts.append(temp)
         }
     }
-    let buqi = texts.count%22
+    let buqi = texts.count%tableViewRows
     if buqi == 0{
         return (tempTitle,tempNextUrl,tempPraUrl,texts)
     }
-    for _ in 0..<(22-buqi) {
+    for _ in 0..<(tableViewRows-buqi) {
         texts.append(" ")
     }
     return (tempTitle,tempNextUrl,tempPraUrl,texts)
@@ -119,7 +119,7 @@ func downloadImg(_ url:String,_ myBookIndex:Int)->String{
     let destination:DownloadRequest.DownloadFileDestination = { _ , _ in
         let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         let fileURL = documentsURL.appendingPathComponent("img/\(name).jpg")
-        //两个参数表示如果有同名文件则会覆盖，如果路径中文件夹不存在则会自动创建
+        //如果路径中文件夹不存在则会自动创建
         return (fileURL, [.createIntermediateDirectories])
     }
     if File.fileIsExist(fileName: "img/\(name).jpg"){
@@ -132,4 +132,19 @@ func downloadImg(_ url:String,_ myBookIndex:Int)->String{
             }
     }
     return ""
+}
+enum getDataNames:String{
+    case fontIndex = "fontIndex"
+}
+func saveUserDefaultsData(data:String,getDataName:String){
+    UserDefaults.standard.set(data, forKey: getDataName)
+}
+func readUserDefaultsLoginData(getDataName:String)->String?{
+    guard let account = UserDefaults.standard.value(forKey: getDataName) else {
+        return nil
+    }
+    return account as? String
+}
+func delUserDefaultsLoginData(getDataName:String){
+    UserDefaults.standard.removeObject(forKey: getDataName)
 }

@@ -80,6 +80,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="backView" destination="sZm-9Y-1B0" id="g5p-se-wbQ"/>
                 <outlet property="boxHeight" destination="vNO-YY-PYY" id="ilg-o6-uha"/>
                 <outlet property="boxWeight" destination="BH7-pT-fl1" id="DxD-zw-1qm"/>
                 <outlet property="titleLabel" destination="PAs-Oa-ZTK" id="PPm-HK-Asu"/>

@@ -10,13 +10,14 @@ import UIKit
 import Kanna
 class CatalogTableViewController: UITableViewController {
 
-    
     var catalog = [KfCatalog]()
     var currentUrl = "https://www.biqudao.com/bqge114445/"{
         didSet{
             getCatalog(currentUrl)
         }
     }
+    var isBack = false
+    var isBackBlock:((String)->Void)?
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = false
@@ -31,15 +32,21 @@ class CatalogTableViewController: UITableViewController {
         queue.async {
             print(self.currentUrl)
             starePrompt("获取数据中...")
-            let tempMyBook = KfMybook()
-            let str = try! String.init(contentsOf: URL(string: self.currentUrl)!)
-            tempMyBook.title = filterStr(str: str, befor: "<span class=\"title\">", after: "</span>")
-            tempMyBook.image = filterStr(str: str, befor: "<img src=\"https://", after: "\" onerror=")
-            self.chapterUrl = self.currentUrl + "all.html"
-            tempMyBook.catalog = self.chapterUrl
-            mybook.append(tempMyBook)
+            var tempUrl = ""
+            if self.isBack{
+                tempUrl = self.currentUrl
+                tempUrl = tempUrl.replacingOccurrences(of: "/", with: "")
+            }else{
+                let tempMyBook = KfMybook()
+                let str = try! String.init(contentsOf: URL(string: self.currentUrl)!)
+                tempMyBook.title = filterStr(str: str, befor: "<span class=\"title\">", after: "</span>")
+                tempMyBook.image = filterStr(str: str, befor: "<img src=\"https://", after: "\" onerror=")
+                self.chapterUrl = self.currentUrl + "all.html"
+                tempMyBook.catalog = self.chapterUrl
+                mybook.append(tempMyBook)
+                tempUrl = self.chapterUrl.replacingOccurrences(of: "/", with: "")
+            }
             
-            var tempUrl = self.chapterUrl.replacingOccurrences(of: "/", with: "")
             tempUrl = tempUrl.replacingOccurrences(of: ":", with: "")
             tempUrl = tempUrl.replacingOccurrences(of: ".", with: "")
             if File.fileIsExist(fileName: "data/\(tempUrl).txt"){
@@ -100,9 +107,15 @@ class CatalogTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = ReadContentNewViewController()
-        vc.currentUrl = baseUrl + catalog[indexPath.row].url
-        vc.data.catalog = chapterUrl
-        self.navigationController?.pushViewController(vc, animated: true)
+        if isBack{
+            isBackBlock?(baseUrl + catalog[indexPath.row].url)
+            navigationController?.popViewController(animated: true)
+        }else{
+            let vc = ReadContentNewViewController()
+            vc.getcatalogs(chapterUrl)
+            vc.currentUrl = baseUrl + catalog[indexPath.row].url
+            vc.data.catalog = chapterUrl
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }

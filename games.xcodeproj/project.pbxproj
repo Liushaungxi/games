@@ -21,7 +21,6 @@
 		6E7AFDC2215B613700501F17 /* CatalogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7AFDC0215B613700501F17 /* CatalogTableViewCell.swift */; };
 		6E7AFDC3215B613700501F17 /* CatalogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E7AFDC1215B613700501F17 /* CatalogTableViewCell.xib */; };
 		6E7AFDC7215B6CB700501F17 /* MainNavgationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7AFDC6215B6CB700501F17 /* MainNavgationViewController.swift */; };
-		6E7AFDCB215B815E00501F17 /* MyBooksCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7AFDCA215B815E00501F17 /* MyBooksCollectionViewController.swift */; };
 		6E7AFDCD215B817800501F17 /* WebsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7AFDCC215B817800501F17 /* WebsTableViewController.swift */; };
 		6E89ED22214FA51A00EF319C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E89ED21214FA51A00EF319C /* AppDelegate.swift */; };
 		6E89ED24214FA51A00EF319C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E89ED23214FA51A00EF319C /* ViewController.swift */; };
@@ -35,6 +34,8 @@
 		6EA271B9215A1FFB003C9264 /* ContentTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA271B7215A1FFB003C9264 /* ContentTitleTableViewCell.swift */; };
 		6EA271BA215A1FFB003C9264 /* ContentTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EA271B8215A1FFB003C9264 /* ContentTitleTableViewCell.xib */; };
 		6EA271BE215A3374003C9264 /* fileExtence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA271BD215A3374003C9264 /* fileExtence.swift */; };
+		6EA8C51C216AF44700F13CBB /* NewMybooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA8C51A216AF44700F13CBB /* NewMybooksViewController.swift */; };
+		6EA8C51D216AF44700F13CBB /* NewMybooksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EA8C51B216AF44700F13CBB /* NewMybooksViewController.xib */; };
 		6EF682742154DA9F0039D870 /* tuozhan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF682732154DA9F0039D870 /* tuozhan.swift */; };
 		6EF6827B2154E3180039D870 /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF682792154E3180039D870 /* ContentTableViewCell.swift */; };
 		6EF6827C2154E3180039D870 /* ContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EF6827A2154E3180039D870 /* ContentTableViewCell.xib */; };
@@ -57,7 +58,6 @@
 		6E7AFDC0215B613700501F17 /* CatalogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogTableViewCell.swift; sourceTree = "<group>"; };
 		6E7AFDC1215B613700501F17 /* CatalogTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogTableViewCell.xib; sourceTree = "<group>"; };
 		6E7AFDC6215B6CB700501F17 /* MainNavgationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavgationViewController.swift; sourceTree = "<group>"; };
-		6E7AFDCA215B815E00501F17 /* MyBooksCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBooksCollectionViewController.swift; sourceTree = "<group>"; };
 		6E7AFDCC215B817800501F17 /* WebsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsTableViewController.swift; sourceTree = "<group>"; };
 		6E89ED1E214FA51A00EF319C /* games.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = games.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E89ED21214FA51A00EF319C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +73,8 @@
 		6EA271B7215A1FFB003C9264 /* ContentTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTitleTableViewCell.swift; sourceTree = "<group>"; };
 		6EA271B8215A1FFB003C9264 /* ContentTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentTitleTableViewCell.xib; sourceTree = "<group>"; };
 		6EA271BD215A3374003C9264 /* fileExtence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fileExtence.swift; sourceTree = "<group>"; };
+		6EA8C51A216AF44700F13CBB /* NewMybooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMybooksViewController.swift; sourceTree = "<group>"; };
+		6EA8C51B216AF44700F13CBB /* NewMybooksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewMybooksViewController.xib; sourceTree = "<group>"; };
 		6EF682732154DA9F0039D870 /* tuozhan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tuozhan.swift; sourceTree = "<group>"; };
 		6EF682792154E3180039D870 /* ContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewCell.swift; sourceTree = "<group>"; };
 		6EF6827A2154E3180039D870 /* ContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentTableViewCell.xib; sourceTree = "<group>"; };
@@ -107,7 +109,8 @@
 				6E55339E215C655C00F75760 /* TempMainViewController.swift */,
 				6E55339A215C64D100F75760 /* MainViewController.swift */,
 				6E55339B215C64D100F75760 /* MainViewController.xib */,
-				6E7AFDCA215B815E00501F17 /* MyBooksCollectionViewController.swift */,
+				6EA8C51A216AF44700F13CBB /* NewMybooksViewController.swift */,
+				6EA8C51B216AF44700F13CBB /* NewMybooksViewController.xib */,
 				6E7AFDCC215B817800501F17 /* WebsTableViewController.swift */,
 			);
 			path = vc;
@@ -300,6 +303,7 @@
 			files = (
 				6E89ED2F214FA51B00EF319C /* LaunchScreen.storyboard in Resources */,
 				6E89ED2C214FA51B00EF319C /* Assets.xcassets in Resources */,
+				6EA8C51D216AF44700F13CBB /* NewMybooksViewController.xib in Resources */,
 				6E89ED3E214FA56E00EF319C /* Game2048ViewController.xib in Resources */,
 				6E077EBD215DFE0800F0E69D /* ReadContentNewViewController.xib in Resources */,
 				6E55339D215C64D100F75760 /* MainViewController.xib in Resources */,
@@ -328,6 +332,7 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftTheme/SwiftTheme.framework",
 				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -338,6 +343,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftTheme.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,7 +386,6 @@
 				6EF6827B2154E3180039D870 /* ContentTableViewCell.swift in Sources */,
 				6E5533AF215CB50800F75760 /* MybookCollectionViewCell.swift in Sources */,
 				6E55339C215C64D100F75760 /* MainViewController.swift in Sources */,
-				6E7AFDCB215B815E00501F17 /* MyBooksCollectionViewController.swift in Sources */,
 				6E55339F215C655C00F75760 /* TempMainViewController.swift in Sources */,
 				6E89ED42214FA56E00EF319C /* Game2048BaseViewBox.swift in Sources */,
 				6E89ED2A214FA51A00EF319C /* games.xcdatamodeld in Sources */,
@@ -390,6 +395,7 @@
 				6E077EBC215DFE0800F0E69D /* ReadContentNewViewController.swift in Sources */,
 				6EA271B9215A1FFB003C9264 /* ContentTitleTableViewCell.swift in Sources */,
 				6E89ED22214FA51A00EF319C /* AppDelegate.swift in Sources */,
+				6EA8C51C216AF44700F13CBB /* NewMybooksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

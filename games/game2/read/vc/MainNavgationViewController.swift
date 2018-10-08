@@ -13,10 +13,12 @@ class MainNavgationViewController: UIViewController,WKNavigationDelegate {
     var mainUrl = ""
     var progressView:UIProgressView = UIProgressView()
     var parsingButton = UIButton(type: UIButtonType.custom)
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = false
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(webView)
@@ -48,7 +50,6 @@ class MainNavgationViewController: UIViewController,WKNavigationDelegate {
         parsingButton.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.5)
         parsingButton.layer.cornerRadius = 25
         parsingButton.addTarget(self, action: #selector(click), for: .touchUpInside)
-        
     }
     @objc func click(){
         let tempUrl = webView.url?.absoluteString
@@ -91,16 +92,6 @@ class MainNavgationViewController: UIViewController,WKNavigationDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

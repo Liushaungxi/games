@@ -36,15 +36,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Dy-UW-kRW">
+                                <rect key="frame" x="80" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="LSa-CH-uZM"/>
+                                    <constraint firstAttribute="width" constant="20" id="plD-IG-IPM"/>
+                                </constraints>
+                                <state key="normal" image="非选中"/>
+                                <state key="selected" image="选中"/>
+                                <connections>
+                                    <action selector="selectedButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="f10-kb-p7m"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="width" constant="100" id="31Z-Db-x2n"/>
                             <constraint firstItem="Zcc-eM-9Fd" firstAttribute="top" secondItem="49y-zx-CIQ" secondAttribute="bottom" constant="12" id="QxN-9d-UDx"/>
+                            <constraint firstItem="5Dy-UW-kRW" firstAttribute="top" secondItem="f4Y-ZC-Iwr" secondAttribute="top" id="dqc-iH-JYK"/>
                             <constraint firstItem="49y-zx-CIQ" firstAttribute="centerX" secondItem="f4Y-ZC-Iwr" secondAttribute="centerX" id="e7k-Nj-Q0S"/>
                             <constraint firstItem="Zcc-eM-9Fd" firstAttribute="centerX" secondItem="f4Y-ZC-Iwr" secondAttribute="centerX" id="gHE-d2-GJC"/>
                             <constraint firstAttribute="height" constant="143" id="gQd-gK-UCk"/>
                             <constraint firstItem="49y-zx-CIQ" firstAttribute="top" secondItem="f4Y-ZC-Iwr" secondAttribute="top" constant="8" id="lO5-7f-N4b"/>
+                            <constraint firstAttribute="trailing" secondItem="5Dy-UW-kRW" secondAttribute="trailing" id="x87-21-2gY"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -62,8 +77,13 @@
                 <outlet property="boxWeight" destination="31Z-Db-x2n" id="YhF-SY-UHV"/>
                 <outlet property="image" destination="49y-zx-CIQ" id="z5E-E3-CsU"/>
                 <outlet property="nameLabel" destination="Zcc-eM-9Fd" id="Vq9-Cy-nrz"/>
+                <outlet property="selectedButton" destination="5Dy-UW-kRW" id="Piv-3h-ENS"/>
             </connections>
-            <point key="canvasLocation" x="-157" y="50.5"/>
+            <point key="canvasLocation" x="-445" y="64"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="选中" width="16" height="16"/>
+        <image name="非选中" width="16" height="16"/>
+    </resources>
 </document>

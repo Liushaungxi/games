@@ -10,6 +10,7 @@ import UIKit
 
 class ContentTitleTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var backView: UIView!
     @IBOutlet weak var boxWeight: NSLayoutConstraint!
     @IBOutlet weak var boxHeight: NSLayoutConstraint!
     @IBOutlet weak var titleLabel: UILabel!

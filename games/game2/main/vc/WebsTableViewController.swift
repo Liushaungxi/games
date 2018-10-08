@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftTheme
 import XLPagerTabStrip
 class WebsTableViewController: UITableViewController,IndicatorInfoProvider {
     var titles:IndicatorInfo = ""

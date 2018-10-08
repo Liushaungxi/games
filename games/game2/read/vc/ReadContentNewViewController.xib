@@ -14,7 +14,9 @@
             <connections>
                 <outlet property="bottonView" destination="QQC-zZ-MRq" id="L9F-Ch-UdT"/>
                 <outlet property="dayAndNightBotton" destination="TCd-f7-XXd" id="GJs-gn-Ay2"/>
+                <outlet property="slider" destination="lvQ-Iv-Xx0" id="S9D-dH-RTj"/>
                 <outlet property="tableView" destination="Byq-CS-MuS" id="0Xh-vm-cTm"/>
+                <outlet property="titleLabel" destination="0Dl-nr-15j" id="w0H-vT-aSg"/>
                 <outlet property="topView" destination="cki-FE-bGK" id="fbp-gj-hme"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -51,11 +53,19 @@
                                 <action selector="downLoadButton:" destination="-1" eventType="touchUpInside" id="FY9-eg-YgD"/>
                             </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dl-nr-15j">
+                            <rect key="frame" x="60" y="10" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.78832116784233575" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="6TK-Jh-yie" firstAttribute="centerY" secondItem="cki-FE-bGK" secondAttribute="centerY" id="0sG-0i-B5R"/>
                         <constraint firstAttribute="height" constant="40" id="3UO-by-jQn"/>
+                        <constraint firstItem="0Dl-nr-15j" firstAttribute="centerY" secondItem="cki-FE-bGK" secondAttribute="centerY" id="Mox-Yb-jSh"/>
+                        <constraint firstItem="0Dl-nr-15j" firstAttribute="leading" secondItem="6TK-Jh-yie" secondAttribute="trailing" constant="8" id="bZQ-ds-3Ok"/>
                         <constraint firstItem="ApR-h5-Ukx" firstAttribute="centerY" secondItem="cki-FE-bGK" secondAttribute="centerY" id="bkj-0V-ORU"/>
                         <constraint firstAttribute="trailing" secondItem="ApR-h5-Ukx" secondAttribute="trailing" constant="12" id="g9h-V3-8AW"/>
                         <constraint firstItem="6TK-Jh-yie" firstAttribute="leading" secondItem="cki-FE-bGK" secondAttribute="leading" constant="20" id="klK-HC-SMe"/>
