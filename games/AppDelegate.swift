@@ -8,16 +8,15 @@
 
 import UIKit
 import CoreData
-
 @available(iOS 10.0, *)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let vc = TempMainViewController()
+        let vc = LateralSpreadsMenuViewController(tempMainVc: TempMainViewController(), tempMenuVc: SettingTableViewController())
+        
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
         return true

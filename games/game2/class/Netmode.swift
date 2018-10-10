@@ -15,6 +15,7 @@ class KfContent:NSObject,HandyJSON{
     var parUrl = ""
     var content = [String]()
     var catalog = ""
+    var folder = 0
     required override init(){}
 }
 class KfCatalog: NSObject,HandyJSON {
@@ -34,6 +35,7 @@ class KfMybook: NSObject,HandyJSON {
     var catalog = ""
     var imagePath = ""
     var currentChapter = ""
+    var folder = 0
     var currentIndex = 0
     var chapterIndex = 0
     required override init(){}

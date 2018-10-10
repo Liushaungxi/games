@@ -22,11 +22,21 @@ class File {
         let contentsOfPath = try? manager.contentsOfDirectory(atPath: url.path)
         return contentsOfPath ?? ["空"]
     }
+    //计算文件夹的空间大小
+//    var fileArray = File.getPathFileDetailList(folder: "/data")
+//    fileArray += File.getPathFileDetailList(folder: "/img")
+//    var size:Int = 0
+//    for item in fileArray {
+//    let manager = FileManager.default
+//    let attributes = try? manager.attributesOfItem(atPath: (item.path))
+//    size += attributes![FileAttributeKey.size]! as! Int
+//    }
+//    print("\(size)B")
     //（3）类似上面的，对指定路径执行浅搜索，返回指定目录路径下的文件、子目录及符号链接的列表
-    static func getPathFileDetailList()->[URL]{
+    static func getPathFileDetailList(folder:String)->[URL]{
         let manager = FileManager.default
-        let url = getUserFilePath()
-        let contentsOfURL = try? manager.contentsOfDirectory(at: url,
+        let url = URL.init(string: getUserFilePath().absoluteString + folder)
+        let contentsOfURL = try? manager.contentsOfDirectory(at: url!,
                                                              includingPropertiesForKeys: nil, options: .skipsHiddenFiles)
         return contentsOfURL ?? [URL.init(string: "nil")!]
     }

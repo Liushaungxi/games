@@ -23,15 +23,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="100" height="143"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="49y-zx-CIQ">
-                                <rect key="frame" x="8" y="8" width="84" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="RjN-ef-yZI"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="84" id="j8L-Os-TCE"/>
-                                    <constraint firstAttribute="width" constant="84" id="uUM-I4-MVM"/>
-                                </constraints>
+                                <rect key="frame" x="8" y="8" width="84" height="98"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcc-eM-9Fd">
-                                <rect key="frame" x="32.5" y="80" width="35.5" height="17"/>
+                                <rect key="frame" x="32.5" y="114" width="35.5" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="GLQ-HG-LIX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,14 +50,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Zcc-eM-9Fd" secondAttribute="bottom" constant="12" id="1RS-9T-sFg"/>
+                            <constraint firstItem="49y-zx-CIQ" firstAttribute="leading" secondItem="f4Y-ZC-Iwr" secondAttribute="leading" constant="8" id="1lF-FH-HhG"/>
                             <constraint firstAttribute="width" constant="100" id="31Z-Db-x2n"/>
-                            <constraint firstItem="Zcc-eM-9Fd" firstAttribute="top" secondItem="49y-zx-CIQ" secondAttribute="bottom" constant="12" id="QxN-9d-UDx"/>
+                            <constraint firstItem="Zcc-eM-9Fd" firstAttribute="centerX" secondItem="f4Y-ZC-Iwr" secondAttribute="centerX" id="CJZ-9w-CU7"/>
+                            <constraint firstItem="49y-zx-CIQ" firstAttribute="top" secondItem="f4Y-ZC-Iwr" secondAttribute="top" constant="8" id="VXK-g7-7mw"/>
                             <constraint firstItem="5Dy-UW-kRW" firstAttribute="top" secondItem="f4Y-ZC-Iwr" secondAttribute="top" id="dqc-iH-JYK"/>
-                            <constraint firstItem="49y-zx-CIQ" firstAttribute="centerX" secondItem="f4Y-ZC-Iwr" secondAttribute="centerX" id="e7k-Nj-Q0S"/>
-                            <constraint firstItem="Zcc-eM-9Fd" firstAttribute="centerX" secondItem="f4Y-ZC-Iwr" secondAttribute="centerX" id="gHE-d2-GJC"/>
                             <constraint firstAttribute="height" constant="143" id="gQd-gK-UCk"/>
-                            <constraint firstItem="49y-zx-CIQ" firstAttribute="top" secondItem="f4Y-ZC-Iwr" secondAttribute="top" constant="8" id="lO5-7f-N4b"/>
+                            <constraint firstItem="Zcc-eM-9Fd" firstAttribute="top" secondItem="49y-zx-CIQ" secondAttribute="bottom" constant="8" id="uHr-nB-vgh"/>
                             <constraint firstAttribute="trailing" secondItem="5Dy-UW-kRW" secondAttribute="trailing" id="x87-21-2gY"/>
+                            <constraint firstAttribute="trailing" secondItem="49y-zx-CIQ" secondAttribute="trailing" constant="8" id="zYU-qt-4JM"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -79,7 +79,7 @@
                 <outlet property="nameLabel" destination="Zcc-eM-9Fd" id="Vq9-Cy-nrz"/>
                 <outlet property="selectedButton" destination="5Dy-UW-kRW" id="Piv-3h-ENS"/>
             </connections>
-            <point key="canvasLocation" x="-445" y="64"/>
+            <point key="canvasLocation" x="-445" y="63.5"/>
         </collectionViewCell>
     </objects>
     <resources>

@@ -25,6 +25,8 @@ class TempMainViewController: UIViewController {
         nav.navigationBar.isTranslucent = false
         nav.navigationBar.isHidden = true
         addMyChidVc(nav, box: viewBox)
+        
+        
     }
     
     override func didReceiveMemoryWarning() {

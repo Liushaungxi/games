@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6E077EBC215DFE0800F0E69D /* ReadContentNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E077EBA215DFE0800F0E69D /* ReadContentNewViewController.swift */; };
 		6E077EBD215DFE0800F0E69D /* ReadContentNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E077EBB215DFE0800F0E69D /* ReadContentNewViewController.xib */; };
+		6E1A9DB9216C90D80059A06A /* LateralSpreadsMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A9DB8216C90D80059A06A /* LateralSpreadsMenuViewController.swift */; };
 		6E55339C215C64D100F75760 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E55339A215C64D100F75760 /* MainViewController.swift */; };
 		6E55339D215C64D100F75760 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E55339B215C64D100F75760 /* MainViewController.xib */; };
 		6E55339F215C655C00F75760 /* TempMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E55339E215C655C00F75760 /* TempMainViewController.swift */; };
@@ -17,6 +18,9 @@
 		6E5533A9215C6AF100F75760 /* Netmode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5533A8215C6AF100F75760 /* Netmode.swift */; };
 		6E5533AF215CB50800F75760 /* MybookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5533AD215CB50800F75760 /* MybookCollectionViewCell.swift */; };
 		6E5533B0215CB50800F75760 /* MybookCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5533AE215CB50800F75760 /* MybookCollectionViewCell.xib */; };
+		6E6FCC17216DC8400056EAF5 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6FCC16216DC8400056EAF5 /* SettingTableViewController.swift */; };
+		6E6FCC1A216DC9080056EAF5 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6FCC18216DC9080056EAF5 /* SettingTableViewCell.swift */; };
+		6E6FCC1B216DC9080056EAF5 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E6FCC19216DC9080056EAF5 /* SettingTableViewCell.xib */; };
 		6E7AFDBF215B2FF300501F17 /* CatalogTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7AFDBE215B2FF300501F17 /* CatalogTableViewController.swift */; };
 		6E7AFDC2215B613700501F17 /* CatalogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7AFDC0215B613700501F17 /* CatalogTableViewCell.swift */; };
 		6E7AFDC3215B613700501F17 /* CatalogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E7AFDC1215B613700501F17 /* CatalogTableViewCell.xib */; };
@@ -45,6 +49,7 @@
 /* Begin PBXFileReference section */
 		6E077EBA215DFE0800F0E69D /* ReadContentNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadContentNewViewController.swift; sourceTree = "<group>"; };
 		6E077EBB215DFE0800F0E69D /* ReadContentNewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReadContentNewViewController.xib; sourceTree = "<group>"; };
+		6E1A9DB8216C90D80059A06A /* LateralSpreadsMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LateralSpreadsMenuViewController.swift; sourceTree = "<group>"; };
 		6E2A383A318110F6FC92F587 /* Pods-games.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-games.release.xcconfig"; path = "Pods/Target Support Files/Pods-games/Pods-games.release.xcconfig"; sourceTree = "<group>"; };
 		6E55339A215C64D100F75760 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6E55339B215C64D100F75760 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -54,6 +59,9 @@
 		6E5533A8215C6AF100F75760 /* Netmode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netmode.swift; sourceTree = "<group>"; };
 		6E5533AD215CB50800F75760 /* MybookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MybookCollectionViewCell.swift; sourceTree = "<group>"; };
 		6E5533AE215CB50800F75760 /* MybookCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MybookCollectionViewCell.xib; sourceTree = "<group>"; };
+		6E6FCC16216DC8400056EAF5 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		6E6FCC18216DC9080056EAF5 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		6E6FCC19216DC9080056EAF5 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
 		6E7AFDBE215B2FF300501F17 /* CatalogTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogTableViewController.swift; sourceTree = "<group>"; };
 		6E7AFDC0215B613700501F17 /* CatalogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogTableViewCell.swift; sourceTree = "<group>"; };
 		6E7AFDC1215B613700501F17 /* CatalogTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatalogTableViewCell.xib; sourceTree = "<group>"; };
@@ -112,6 +120,7 @@
 				6EA8C51A216AF44700F13CBB /* NewMybooksViewController.swift */,
 				6EA8C51B216AF44700F13CBB /* NewMybooksViewController.xib */,
 				6E7AFDCC215B817800501F17 /* WebsTableViewController.swift */,
+				6E6FCC16216DC8400056EAF5 /* SettingTableViewController.swift */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -123,6 +132,8 @@
 				6E5533A4215C67FD00F75760 /* WebTableViewCell.xib */,
 				6E5533AD215CB50800F75760 /* MybookCollectionViewCell.swift */,
 				6E5533AE215CB50800F75760 /* MybookCollectionViewCell.xib */,
+				6E6FCC18216DC9080056EAF5 /* SettingTableViewCell.swift */,
+				6E6FCC19216DC9080056EAF5 /* SettingTableViewCell.xib */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -198,6 +209,7 @@
 				6E89ED2D214FA51B00EF319C /* LaunchScreen.storyboard */,
 				6E89ED30214FA51B00EF319C /* Info.plist */,
 				6E89ED28214FA51A00EF319C /* games.xcdatamodeld */,
+				6E1A9DB8216C90D80059A06A /* LateralSpreadsMenuViewController.swift */,
 				6EF682732154DA9F0039D870 /* tuozhan.swift */,
 				6EA271BD215A3374003C9264 /* fileExtence.swift */,
 			);
@@ -301,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E6FCC1B216DC9080056EAF5 /* SettingTableViewCell.xib in Resources */,
 				6E89ED2F214FA51B00EF319C /* LaunchScreen.storyboard in Resources */,
 				6E89ED2C214FA51B00EF319C /* Assets.xcassets in Resources */,
 				6EA8C51D216AF44700F13CBB /* NewMybooksViewController.xib in Resources */,
@@ -381,6 +394,7 @@
 				6EF682742154DA9F0039D870 /* tuozhan.swift in Sources */,
 				6E7AFDC7215B6CB700501F17 /* MainNavgationViewController.swift in Sources */,
 				6E89ED24214FA51A00EF319C /* ViewController.swift in Sources */,
+				6E6FCC1A216DC9080056EAF5 /* SettingTableViewCell.swift in Sources */,
 				6E5533A9215C6AF100F75760 /* Netmode.swift in Sources */,
 				6E7AFDC2215B613700501F17 /* CatalogTableViewCell.swift in Sources */,
 				6EF6827B2154E3180039D870 /* ContentTableViewCell.swift in Sources */,
@@ -392,7 +406,9 @@
 				6EA271BE215A3374003C9264 /* fileExtence.swift in Sources */,
 				6E89ED3D214FA56E00EF319C /* Game2048ViewController.swift in Sources */,
 				6E7AFDBF215B2FF300501F17 /* CatalogTableViewController.swift in Sources */,
+				6E1A9DB9216C90D80059A06A /* LateralSpreadsMenuViewController.swift in Sources */,
 				6E077EBC215DFE0800F0E69D /* ReadContentNewViewController.swift in Sources */,
+				6E6FCC17216DC8400056EAF5 /* SettingTableViewController.swift in Sources */,
 				6EA271B9215A1FFB003C9264 /* ContentTitleTableViewCell.swift in Sources */,
 				6E89ED22214FA51A00EF319C /* AppDelegate.swift in Sources */,
 				6EA8C51C216AF44700F13CBB /* NewMybooksViewController.swift in Sources */,

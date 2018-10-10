@@ -35,6 +35,7 @@ class CatalogTableViewController: UITableViewController {
             var tempUrl = ""
             if self.isBack{
                 tempUrl = self.currentUrl
+                self.chapterUrl = self.currentUrl
                 tempUrl = tempUrl.replacingOccurrences(of: "/", with: "")
             }else{
                 let tempMyBook = KfMybook()

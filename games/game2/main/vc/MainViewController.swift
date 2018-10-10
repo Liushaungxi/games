@@ -25,6 +25,7 @@ class MainViewController: ButtonBarPagerTabStripViewController {
             newCell?.label.textColor = UIColor.red
         }
         super.viewDidLoad()
+//        containerView.panGestureRecognizer.require(toFail: appMainVc.panRecognizer)
     }
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
         let vc1 = NewMybooksViewController()
@@ -34,5 +35,4 @@ class MainViewController: ButtonBarPagerTabStripViewController {
         vc2.titles.title = "精品书城"
         return [vc1,vc2]
     }
-    
 }

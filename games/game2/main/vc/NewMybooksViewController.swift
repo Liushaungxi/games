@@ -28,7 +28,20 @@ class NewMybooksViewController: UIViewController,UICollectionViewDelegate,UIColl
         collectionView.reloadData()
     }
     @IBAction func delectButton(_ sender: Any) {
+        for i in 0..<selectedBtnBool.count{
+            if selectedBtnBool[i] == true{
+                mybook.remove(at: i)
+            }
+        }
+        collectionView.reloadData()
+        File.delFile(fileName: "lishi.txt")
+        File.createFile(fileName: "lishi.txt", filePathName: "")
+        File.writeFile(fileName: "lishi.txt", filePathName: "", content: mybook.toJSONString()!)
         compileModel = false
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
+        collectionView.reloadData()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,9 +50,10 @@ class NewMybooksViewController: UIViewController,UICollectionViewDelegate,UIColl
         collectionView.dataSource = self
         readLiShi()
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 160, height: 106)
+        layout.itemSize = CGSize(width: UIScreen.main.bounds.width/3-9, height: UIScreen.main.bounds.width/2)
         collectionView?.collectionViewLayout = layout
         collectionView?.registerCell(cell: MybookCollectionViewCell.self)
+        
     }
     func readLiShi() {
         if !File.fileIsExist(fileName: "lishi.txt"){
@@ -72,11 +86,10 @@ class NewMybooksViewController: UIViewController,UICollectionViewDelegate,UIColl
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MybookCollectionViewCell", for: indexPath) as! MybookCollectionViewCell
         cell.nameLabel.text = mybook[indexPath.row].title
-        
-        cell.block = {[weak self]()in
-            guard let weakSelf = self else{return}
-            weakSelf.compileModel = true
-        }
+        let tap = UILongPressGestureRecognizer(target: self, action: #selector(delectBtn(_:)))
+        tap.minimumPressDuration = 1
+        tap.numberOfTouchesRequired = 1
+        cell.addGestureRecognizer(tap)
         if mybook.count > selectedBtnBool.count{
             selectedBtnBool.append(false)
         }
@@ -93,18 +106,48 @@ class NewMybooksViewController: UIViewController,UICollectionViewDelegate,UIColl
         }
         return cell
     }
+    @objc func delectBtn(_ sender: UILongPressGestureRecognizer) {
+        switch sender.state {
+        case .began:
+            if compileModel{
+                let selectedCellIndex = collectionView.indexPathForItem(at: sender.location(in: collectionView))
+                collectionView.beginInteractiveMovementForItem(at: selectedCellIndex!)
+            }else{
+                compileModel = true
+            }
+        case .changed:
+            collectionView.updateInteractiveMovementTargetPosition(sender.location(in: collectionView))
+        case .ended:
+            collectionView.endInteractiveMovement()
+        default:
+            collectionView.cancelInteractiveMovement()
+        }
+        
+    }
+    func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        let tempMybook = mybook[sourceIndexPath.item]
+        mybook.remove(at: sourceIndexPath.item)
+        mybook.insert(tempMybook, at: destinationIndexPath.item)
+    }
     var selectedBtnBool = [Bool]()
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if compileModel{
             selectedBtnBool[indexPath.row] = !selectedBtnBool[indexPath.row]
             collectionView.reloadData()
         }else{
-            let vc = ReadContentNewViewController()
-            vc.index = mybook[indexPath.row].currentIndex
-            vc.data.catalog = mybook[indexPath.row].catalog
-            vc.currentUrl = mybook[indexPath.row].currentChapter
-            vc.getcatalogs(mybook[indexPath.row].catalog)
-            navigationController?.pushViewController(vc, animated: true)
+            if mybook[indexPath.row].currentChapter != ""{
+                let vc = ReadContentNewViewController()
+                vc.index = mybook[indexPath.row].currentIndex
+                vc.data.catalog = mybook[indexPath.row].catalog
+                vc.currentUrl = mybook[indexPath.row].currentChapter
+                vc.getcatalogs(mybook[indexPath.row].catalog)
+                navigationController?.pushViewController(vc, animated: true)
+            }else{
+                let vc = CatalogTableViewController()
+                vc.isBack = true
+                vc.currentUrl = mybook[indexPath.row].catalog
+                navigationController?.pushViewController(vc, animated: true)
+            }
         }
     }
 }

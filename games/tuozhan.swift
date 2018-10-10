@@ -148,3 +148,32 @@ func readUserDefaultsLoginData(getDataName:String)->String?{
 func delUserDefaultsLoginData(getDataName:String){
     UserDefaults.standard.removeObject(forKey: getDataName)
 }
+//侧滑手势与scrollview冲突解决办法
+extension UIScrollView{
+    override open func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        if gestureRecognizer is UIPanGestureRecognizer{
+            if self.panback(sender: gestureRecognizer as! UIPanGestureRecognizer){
+                return false
+            }
+        }
+        return true
+    }
+    func panback(sender:UIPanGestureRecognizer)->Bool{
+        let location_x = 0.15*UIScreen.main.bounds.width
+        if sender == self.panGestureRecognizer{
+            let pan = sender
+            let point = pan.translation(in: self)
+            let state = sender.state
+            if UIGestureRecognizerState.began == state || UIGestureRecognizerState.possible == state{
+                let location = sender.location(in: self)
+                let temp1 = location.x
+                let temp2 = UIScreen.main.bounds.width
+                let xx = Int(temp1) % Int(temp2)
+                if point.x>0 && CGFloat(xx)<location_x{
+                    return true
+                }
+            }
+        }
+        return false
+    }
+}
