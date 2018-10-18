@@ -43,5 +43,5 @@ class SettingTableViewController: UITableViewController {
             }
         }
     }
-    let queue = DispatchQueue(label: "aaaa", qos: DispatchQoS.background)
+    let queue = DispatchQueue(label: "delDispatch", qos: DispatchQoS.background)
 }
