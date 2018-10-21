@@ -11,6 +11,9 @@ import SnapKit
 import UIKit.UIGestureRecognizerSubclass
 class Game2048ViewController: UIViewController{
 
+    @IBAction func backAction(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBOutlet weak var crrounrtScore:UILabel!
     @IBOutlet weak var maxScore:UILabel!
     var score = 0

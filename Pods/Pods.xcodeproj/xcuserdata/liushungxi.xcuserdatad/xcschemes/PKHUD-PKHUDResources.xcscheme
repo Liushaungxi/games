@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DE493C5E4AEE5853EEA6EB5936C35A69"
-               BuildableName = "XLPagerTabStrip.framework"
-               BlueprintName = "XLPagerTabStrip"
+               BlueprintIdentifier = "3A09979172F37020AB3D778731BFDEBE"
+               BuildableName = "PKHUDResources.bundle"
+               BlueprintName = "PKHUD-PKHUDResources"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DE493C5E4AEE5853EEA6EB5936C35A69"
-            BuildableName = "XLPagerTabStrip.framework"
-            BlueprintName = "XLPagerTabStrip"
+            BlueprintIdentifier = "3A09979172F37020AB3D778731BFDEBE"
+            BuildableName = "PKHUDResources.bundle"
+            BlueprintName = "PKHUD-PKHUDResources"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

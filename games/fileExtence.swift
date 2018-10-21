@@ -172,7 +172,7 @@ class File {
     }
     static func writeFileContent(fileNameAndPath:String,content:UIImage){
         let filePath:String = NSHomeDirectory() + "/Documents/" + fileNameAndPath
-        let data:Data = UIImagePNGRepresentation(content)!
+        let data:Data = content.pngData()!
         try? data.write(to: URL(fileURLWithPath: filePath))
     }
     static func writeFileContent(fileNameAndPath:String,content:NSArray){

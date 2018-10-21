@@ -1,16 +1,16 @@
 PODS:
   - Alamofire (4.7.3)
-  - HandyJSON (4.1.1)
-  - Kanna (4.0.1)
-  - Kingfisher (4.8.1)
-  - PKHUD (5.1.0)
-  - SnapKit (4.0.0)
-  - SwiftTheme (0.4.1)
-  - XLPagerTabStrip (8.0.1)
+  - HandyJSON (4.2.0)
+  - Kanna (4.0.2)
+  - Kingfisher (4.10.0)
+  - PKHUD (5.2.0)
+  - SnapKit (4.0.1)
+  - SwiftTheme (0.4.3)
+  - XLPagerTabStrip (8.1.0)
 
 DEPENDENCIES:
   - Alamofire
-  - HandyJSON (= 4.1.1)
+  - HandyJSON
   - Kanna
   - Kingfisher
   - PKHUD
@@ -31,14 +31,14 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  HandyJSON: 3a3de917c4118767ffe41c29b5acba23409649f4
-  Kanna: 15569a2331b79782a1753cf280c8e69e2a033654
-  Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
-  PKHUD: 62ea46a1e88c4def1da784878d199bb54c841e3c
-  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
-  SwiftTheme: 36d71c4eed4b2c401c782cf036e4586c749a8173
-  XLPagerTabStrip: c908b17cbf42fcd2598ee1adfc49bae25444d88a
+  HandyJSON: 9dfc026c7d7adc1f0f8ba8b181495f0e0763b0f4
+  Kanna: c60b61d72554bf04ed1ee074f9b379855cab4892
+  Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
+  PKHUD: dd5357ac65f26115c35c4a68e9b328053326c5fe
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  SwiftTheme: 628345b948068a48d330d76dffb1a990ea5f90aa
+  XLPagerTabStrip: 22d4c58200d7c105e0e407ab6bfd01a5d85014be
 
-PODFILE CHECKSUM: 88e29f687056204df748788814cf69735adba3a1
+PODFILE CHECKSUM: 0a044ac54cad91307b7acd915b03f93118bee9a3
 
 COCOAPODS: 1.5.3

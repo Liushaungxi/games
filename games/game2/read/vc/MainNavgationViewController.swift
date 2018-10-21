@@ -12,7 +12,7 @@ class MainNavgationViewController: UIViewController,WKNavigationDelegate {
     let webView = WKWebView()
     var mainUrl = ""
     var progressView:UIProgressView = UIProgressView()
-    var parsingButton = UIButton(type: UIButtonType.custom)
+    var parsingButton = UIButton(type: UIButton.ButtonType.custom)
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

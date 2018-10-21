@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -100,6 +100,15 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Guy-9g-c8Q">
+                    <rect key="frame" x="20" y="90" width="37" height="34"/>
+                    <state key="normal" title="返回">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="giY-aP-h6L"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -109,10 +118,12 @@
                 <constraint firstItem="ZhA-4s-xzF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="Eha-Ou-Aal"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="DVG-Hn-Pe5" secondAttribute="bottom" constant="20" id="Fas-W3-2t5"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2f1-6u-4DO" secondAttribute="bottom" id="Hfw-kZ-zkz"/>
+                <constraint firstItem="Guy-9g-c8Q" firstAttribute="top" secondItem="ZhA-4s-xzF" secondAttribute="bottom" constant="16" id="IAz-pP-nup"/>
                 <constraint firstItem="DVG-Hn-Pe5" firstAttribute="centerX" secondItem="QqH-VB-XEi" secondAttribute="centerX" id="KbC-FW-erX"/>
                 <constraint firstItem="jUW-0D-i7E" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="ORH-QG-Jrj"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jUW-0D-i7E" secondAttribute="trailing" constant="20" id="Svx-Ej-xqH"/>
                 <constraint firstItem="TI0-8a-Ayh" firstAttribute="leading" secondItem="2f1-6u-4DO" secondAttribute="trailing" constant="8" id="Uy8-kF-K7P"/>
+                <constraint firstItem="Guy-9g-c8Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Xwx-Fq-Vd2"/>
                 <constraint firstItem="2f1-6u-4DO" firstAttribute="centerX" secondItem="tMC-U9-wSZ" secondAttribute="centerX" id="ag1-nw-nqk"/>
                 <constraint firstItem="2f1-6u-4DO" firstAttribute="leading" secondItem="DVG-Hn-Pe5" secondAttribute="trailing" constant="8" id="p7C-Qp-7Z7"/>
                 <constraint firstItem="TI0-8a-Ayh" firstAttribute="top" secondItem="scp-KO-rco" secondAttribute="bottom" constant="20" id="pI9-TY-HG6"/>

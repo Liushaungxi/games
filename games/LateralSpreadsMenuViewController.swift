@@ -81,8 +81,8 @@ class LateralSpreadsMenuViewController: UIViewController {
             mainVc.view.addGestureRecognizer(tapRecognizer)
             menuVc = tempVc
             view.insertSubview(menuVc!.view, at: 0)
-            addChildViewController(menuVc!)
-            menuVc!.didMove(toParentViewController: self)
+            addChild(menuVc!)
+            menuVc!.didMove(toParent: self)
         }
     }
     var tapRecognizer = UITapGestureRecognizer()

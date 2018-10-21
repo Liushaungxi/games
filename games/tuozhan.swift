@@ -101,13 +101,13 @@ func endPrompt(){
 }
 extension UIViewController{
     func addMyChidVc(_ vc:UIViewController, box:UIView) {
-        vc.willMove(toParentViewController: self)
+        vc.willMove(toParent: self)
         box.addSubview(vc.view)
         vc.view.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
         }
-        self.addChildViewController(vc)
-        vc.didMove(toParentViewController: self)
+        self.addChild(vc)
+        vc.didMove(toParent: self)
     }
 }
 func downloadImg(_ url:String,_ myBookIndex:Int)->String{
@@ -164,7 +164,7 @@ extension UIScrollView{
             let pan = sender
             let point = pan.translation(in: self)
             let state = sender.state
-            if UIGestureRecognizerState.began == state || UIGestureRecognizerState.possible == state{
+            if UIGestureRecognizer.State.began == state || UIGestureRecognizer.State.possible == state{
                 let location = sender.location(in: self)
                 let temp1 = location.x
                 let temp2 = UIScreen.main.bounds.width
